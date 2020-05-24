@@ -3,19 +3,19 @@
     "manifestVersion": "1.5",
     "version": "1.1.0.0",
     "id": "371E16CD-FDAE-4DC1-BEED-6548F2C85217",
-    "packageName": "com.satechglobal.scrumstatus",
+    "packageName": "com.amidesu.scrumstatus",
     "developer": {
-        "name": "SA Technologies Inc.",
-        "websiteUrl": "https://www.satechglobal.com/",
-        "privacyUrl": "https://www.satechglobal.com/privacy-policy",
-        "termsOfUseUrl": "https://www.satechglobal.com/privacy-policy"
+        "name": "AMIDESU Tech Pvt. Ltd.",
+        "websiteUrl": "https://www.amidesu.com/",
+        "privacyUrl": "https://www.amidesu.com/privacy-policy.html",
+        "termsOfUseUrl": "https://www.amidesu.com/privacy-policy.html"
     },
     "icons": {
         "color": "color.png",
         "outline": "outline.png"
     },
     "name": {
-        "short": "Scrum Team Status"
+        "short": "Scrum Status"
     },
     "description": {
         "short": "Scrum Status Bot helps you get status updates from your team in group chat.",
