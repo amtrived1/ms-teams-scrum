@@ -60,15 +60,15 @@ namespace Microsoft.Teams.Apps.Scrum.Bots
         {
             try
             {
-                if (!this.IsActivityFromExpectedTenant(turnContext))
-                {
-                    this.telemetryClient.TrackTrace($"Unexpected tenant id {turnContext.Activity.Conversation.TenantId}", SeverityLevel.Warning);
-                    await turnContext.SendActivityAsync("User Tenant id is - "+turnContext.Activity.Conversation.TenantId);
-                    await turnContext.SendActivityAsync("Expected Tenant id is - " + this.expectedTenantId);
-                    await turnContext.SendActivityAsync(Resources.WarningTextForTenantFailure);
-                    await Task.CompletedTask;
-                }
-                else
+                // if (!this.IsActivityFromExpectedTenant(turnContext))
+                // {
+                //    this.telemetryClient.TrackTrace($"Unexpected tenant id {turnContext.Activity.Conversation.TenantId}", SeverityLevel.Warning);
+                //    await turnContext.SendActivityAsync("User Tenant id is - "+turnContext.Activity.Conversation.TenantId);
+                //    await turnContext.SendActivityAsync("Expected Tenant id is - " + this.expectedTenantId);
+                //    await turnContext.SendActivityAsync(Resources.WarningTextForTenantFailure);
+                //    await Task.CompletedTask;
+                // }
+                // else
                 {
                     bool isMemberCountUnsupported = await this.IsMemberCountGreaterThanAllowed(turnContext, cancellationToken);
                     if (isMemberCountUnsupported)
