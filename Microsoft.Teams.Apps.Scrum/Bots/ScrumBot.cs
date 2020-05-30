@@ -356,6 +356,7 @@ namespace Microsoft.Teams.Apps.Scrum.Bots
                 {
                     this.telemetryClient.TrackTrace($"Bot added to groupchat {turnContext.Activity.Conversation.Id}");
 
+                    await turnContext.SendActivityAsync("AppBaseURL = " + this.configuration["AppBaseURL"]);
                     var userWelcomeCardAttachment = WelcomeCard.GetCard(this.configuration["AppBaseURL"]);
                     await turnContext.SendActivityAsync(MessageFactory.Attachment(userWelcomeCardAttachment));
                 }
